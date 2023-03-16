@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import "package:flutter_feather_icons/flutter_feather_icons.dart";
 import 'package:flutter_floripa/app/shared/styles/floripa_styles.dart';
+import 'package:flutter_floripa/app/shared/widgets/floripa_button.dart';
 import 'package:flutter_floripa/app/shared/widgets/floripa_input.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_floripa/app/modules/auth/widgets/shadow_bottom_right.dart';
@@ -88,6 +89,12 @@ class LoginPage extends StatelessWidget {
                               label: 'Senha',
                               prefixIcon: FeatherIcons.lock,
                             ),
+                            const SizedBox(height: 50),
+                            FloripaButton(
+                              height: 47,
+                              width: MediaQuery.of(context).size.width,
+                              text: 'ENTRAR',
+                            )
                           ],
                         ),
                       ),

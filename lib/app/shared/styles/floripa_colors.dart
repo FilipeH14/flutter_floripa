@@ -15,5 +15,5 @@ class FloripaColors {
 }
 
 extension FloripaColorsExtensions on BuildContext {
-  FloripaColors get colors => FloripaColors.i;
+  FloripaColors get floripaColors => FloripaColors.i;
 }
