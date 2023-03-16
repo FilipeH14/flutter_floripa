@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import "package:flutter_feather_icons/flutter_feather_icons.dart";
+import 'package:flutter_floripa/app/shared/styles/floripa_colors.dart';
 import 'package:flutter_floripa/app/shared/styles/floripa_styles.dart';
 import 'package:flutter_floripa/app/shared/widgets/floripa_button.dart';
 import 'package:flutter_floripa/app/shared/widgets/floripa_input.dart';
@@ -88,13 +89,37 @@ class LoginPage extends StatelessWidget {
                             const FloripaInput(
                               label: 'Senha',
                               prefixIcon: FeatherIcons.lock,
+                              suffixIcon: FeatherIcons.eyeOff,
                             ),
                             const SizedBox(height: 50),
                             FloripaButton(
                               height: 47,
                               width: MediaQuery.of(context).size.width,
                               text: 'ENTRAR',
-                            )
+                            ),
+                            const SizedBox(height: 20),
+                            Text.rich(
+                              TextSpan(
+                                children: [
+                                  TextSpan(
+                                    text: 'Esqueceu sua senha?',
+                                    style: context.floripaStyles.floripaRegular
+                                        .copyWith(
+                                      fontSize: 15,
+                                      color: Colors.grey[600],
+                                    ),
+                                  ),
+                                  TextSpan(
+                                    text: ' Recupere aqui',
+                                    style: context.floripaStyles.floripaBold
+                                        .copyWith(
+                                      fontSize: 15,
+                                      color: context.floripaColors.secondary,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
