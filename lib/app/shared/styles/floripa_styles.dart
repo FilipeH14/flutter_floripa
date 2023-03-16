@@ -24,5 +24,5 @@ class FloripaStyles {
 }
 
 extension FloripaStylesExtensions on BuildContext {
-  FloripaStyles get textStyles => FloripaStyles.i;
+  FloripaStyles get floripaStyles => FloripaStyles.i;
 }

@@ -20,6 +20,25 @@ class FloripaInit extends StatelessWidget {
             primary: FloripaColors.i.primary,
             secondary: FloripaColors.i.secondary,
           ),
+          inputDecorationTheme: InputDecorationTheme(
+            fillColor: Colors.grey[200],
+            labelStyle: const TextStyle(color: Colors.grey),
+            border: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: BorderSide(color: Colors.grey[200]!),
+            ),
+            enabledBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: BorderSide(color: Colors.grey[200]!),
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(10),
+              borderSide: BorderSide(color: Colors.grey[200]!),
+            ),
+            filled: true,
+            isDense: true,
+            contentPadding: const EdgeInsets.all(5),
+          ),
         ),
         initialRoute: RoutesName.auth,
         routes: RoutesPage.routes,
