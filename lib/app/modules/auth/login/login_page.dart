@@ -4,7 +4,6 @@ import 'package:flutter_floripa/app/shared/styles/floripa_colors.dart';
 import 'package:flutter_floripa/app/shared/styles/floripa_styles.dart';
 import 'package:flutter_floripa/app/shared/widgets/floripa_button.dart';
 import 'package:flutter_floripa/app/shared/widgets/floripa_input.dart';
-import 'package:provider/provider.dart';
 import 'package:flutter_floripa/app/modules/auth/widgets/shadow_bottom_right.dart';
 import 'package:flutter_floripa/app/modules/auth/widgets/shadow_medium_left.dart';
 import 'package:flutter_floripa/app/modules/auth/widgets/shadow_top_left.dart';
@@ -89,7 +88,7 @@ class LoginPage extends StatelessWidget {
                             const FloripaInput(
                               label: 'Senha',
                               prefixIcon: FeatherIcons.lock,
-                              suffixIcon: FeatherIcons.eyeOff,
+                              isObscure: true,
                             ),
                             const SizedBox(height: 50),
                             FloripaButton(
@@ -113,7 +112,7 @@ class LoginPage extends StatelessWidget {
                                     text: ' Recupere aqui',
                                     style: context.floripaStyles.floripaBold
                                         .copyWith(
-                                      fontSize: 15,
+                                      fontSize: 14,
                                       color: context.floripaColors.secondary,
                                     ),
                                   ),
